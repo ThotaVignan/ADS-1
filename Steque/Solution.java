@@ -4,7 +4,7 @@ class Solution
 	public static void main(String[] args) {
 	Operations op = new Operations();
 	Scanner ip = new Scanner(System.in);
-	String n = ip.nextLine();
+	String n = ip.next();
 	for(int i = 0; i<Integer.parseInt(n); i++)
 	{
 		while(ip.hasNext())
