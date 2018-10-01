@@ -51,6 +51,11 @@ class Operations
 		}
 		count--;
 		head = head.adress;
+		if(count == 0)
+		{
+			System.out.println("Steque is empty.");
+			return;
+		}
 		PrintList();
 		
 	}
