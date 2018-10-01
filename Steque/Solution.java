@@ -69,10 +69,16 @@ class Operations
 		}
 		temp.adress = null;
 	}
+	public void clear()
+	{
+		head = null;
+		tail = null;
+		count = 0;
+	}
 	public void PrintList()
 	{
 		Node temp = head;
-		if(count>2)
+		if(count>=2)
 		{
 			while(temp.adress!=null)
 			{
@@ -95,15 +101,25 @@ class Solution
 	public static void main(String[] args) {
 	Operations op = new Operations();
 	Scanner ip = new Scanner(System.in);
-	String n = ip.next();
+	String n = ip.nextLine();
 	for(int i = 0; i<Integer.parseInt(n); i++)
 	{
 		while(ip.hasNext())
 		{
-			String input[] = ip.nextLine().split(" ");
+
+			String inp = ip.nextLine();
+			if(inp.length() == 0)
+			{
+				System.out.println();
+				op.clear();
+				break;
+			}
+			String input[] = inp.split(" ");
+
 			switch(input[0])
 			{
 				case "push":
+					// System.out.println(Arrays.toString(input));
 					op.insert_Starting(Integer.parseInt(input[1]));
 					break;
 
@@ -117,9 +133,6 @@ class Solution
 			}
 
 		}
-		op.head = null;
-		op.tail = null;
-		System.out.println("\n");
 	}
 		
 	}
