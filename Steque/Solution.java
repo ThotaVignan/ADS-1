@@ -29,6 +29,7 @@ class Solution
 			}
 
 		}
+		op.head = null;
 		System.out.println("\n");
 	}
 		
