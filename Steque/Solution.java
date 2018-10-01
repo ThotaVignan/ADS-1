@@ -14,7 +14,6 @@ class Solution
 			{
 				case "push":
 					op.insert_Starting(Integer.parseInt(input[1]));
-					op.PrintList();
 					break;
 
 				case "pop":

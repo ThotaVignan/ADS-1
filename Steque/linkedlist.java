@@ -22,9 +22,11 @@ class Operations
 		if(head == null)
 		{
 			tail = node;
+			PrintList();
 		}
 		node.adress=head;
 		head = node;
+		PrintList();
 	}
 	public void insert_ending(int val)
 	{
@@ -34,11 +36,12 @@ class Operations
 		{
 			head = node;
 			tail = node;
+			PrintList();
 			return;
 		}
 		tail.adress = node;
 		tail = tail.adress;
-
+		PrintList();
 	}
 	public void delete_starting()
 	{
@@ -49,6 +52,8 @@ class Operations
 		}
 		count--;
 		head = head.adress;
+		PrintList();
+
 	}
 	public void delete_Ending()
 	{
