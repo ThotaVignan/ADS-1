@@ -4,8 +4,8 @@ class Solution
 	public static void main(String[] args) {
 	Operations op = new Operations();
 	Scanner ip = new Scanner(System.in);
-	int n = ip.nextInt();
-	for(int i = 0; i<n; i++)
+	String n = ip.nextLine();
+	for(int i = 0; i<Integer.parseInt(n); i++)
 	{
 		while(ip.hasNextLine())
 		{
