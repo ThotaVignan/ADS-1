@@ -62,7 +62,6 @@ class Operations
 	}
 	public void PrintList()
 	{
-		System.out.println("Vignan");
 		Node temp = head;
 		while(temp!=null)
 		{
