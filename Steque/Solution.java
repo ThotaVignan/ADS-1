@@ -18,12 +18,10 @@ class Solution
 
 				case "pop":
 					op.delete_starting();
-					op.PrintList();
 					break;
 
 				case "enqueue":
 					op.insert_ending(Integer.parseInt(input[1]));
-					op.PrintList();
 					break;
 			}
 
