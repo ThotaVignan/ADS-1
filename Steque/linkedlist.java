@@ -84,16 +84,16 @@ class linkedlist
 {
 	public static void main(String[] args) {
 		Operations op = new Operations();
-		op.insert_Starting(5);
-		op.insert_Starting(6);
-		op.insert_Starting(7);
-		op.insert_Starting(8);
-		op.insert_ending(10);
-		op.insert_ending(11);
-		op.insert_ending(12);
-		op.delete_Ending();
-		op.delete_starting();
-		op.PrintList();
-		System.out.println(op.count);
+		// op.insert_Starting(5);
+		// op.insert_Starting(6);
+		// op.insert_Starting(7);
+		// op.insert_Starting(8);
+		// op.insert_ending(10);
+		// op.insert_ending(11);
+		// op.insert_ending(12);
+		// op.delete_Ending();
+		// op.delete_starting();
+		// op.PrintList();
+		// System.out.println(op.count);
 	}
 }

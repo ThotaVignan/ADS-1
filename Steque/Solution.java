@@ -7,7 +7,7 @@ class Solution
 	int n = ip.nextInt();
 	for(int i = 0; i<n; i++)
 	{
-		while(ip.hasNextLine())
+		while(ip.hasNext())
 		{
 			String input[] = ip.nextLine().split(" ");
 			switch(input[0])
