@@ -63,11 +63,21 @@ class Operations
 	public void PrintList()
 	{
 		Node temp = head;
-		while(temp!=null)
+		if(count>2)
+		{
+			while(temp.adress!=null)
+			{
+				System.out.print(temp.data+", ");
+				temp = temp.adress;
+			}
+			System.out.println(temp.data);
+
+		}
+		if(count == 1)
 		{
 			System.out.println(temp.data);
-			temp = temp.adress;
 		}
+		
 	}
 }
 class linkedlist
