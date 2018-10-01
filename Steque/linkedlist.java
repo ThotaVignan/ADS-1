@@ -51,7 +51,8 @@ class Operations
 		}
 		count--;
 		head = head.adress;
-
+		PrintList();
+		
 	}
 	public void delete_Ending()
 	{
