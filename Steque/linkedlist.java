@@ -1,0 +1,90 @@
+import java.util.*;
+class Node
+{
+	int data;
+	Node adress;
+	Node(int val)
+	{
+		data = val;
+		adress = null;
+	}
+}
+class Operations
+{
+	Node head = null;
+	Node tail = null;
+	static int count = 0;
+
+	public void insert_Starting(int val)
+	{
+		count++;
+		Node node = new Node(val);
+		if(head == null)
+		{
+			tail = node;
+		}
+		node.adress=head;
+		head = node;
+	}
+	public void insert_ending(int val)
+	{
+		count++;
+		Node node = new Node(val);
+		if(head == null)
+		{
+			head = node;
+			tail = node;
+			return;
+		}
+		tail.adress = node;
+		tail = tail.adress;
+
+	}
+	public void delete_starting()
+	{
+		if(count == 0)
+		{
+			System.out.println("Steque is empty.");
+			return;
+		}
+		count--;
+		head = head.adress;
+	}
+	public void delete_Ending()
+	{
+		count--;
+		Node temp = head;
+		while(temp.adress.adress != null)
+		{
+			temp = temp.adress;
+		}
+		temp.adress = null;
+	}
+	public void PrintList()
+	{
+		System.out.println("Vignan");
+		Node temp = head;
+		while(temp!=null)
+		{
+			System.out.println(temp.data);
+			temp = temp.adress;
+		}
+	}
+}
+class linkedlist
+{
+	public static void main(String[] args) {
+		Operations op = new Operations();
+		op.insert_Starting(5);
+		op.insert_Starting(6);
+		op.insert_Starting(7);
+		op.insert_Starting(8);
+		op.insert_ending(10);
+		op.insert_ending(11);
+		op.insert_ending(12);
+		op.delete_Ending();
+		op.delete_starting();
+		op.PrintList();
+		System.out.println(op.count);
+	}
+}
