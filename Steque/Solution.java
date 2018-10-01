@@ -118,6 +118,7 @@ class Solution
 
 		}
 		op.head = null;
+		op.tail = null;
 		System.out.println("\n");
 	}
 		
