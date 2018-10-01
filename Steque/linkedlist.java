@@ -22,7 +22,6 @@ class Operations
 		if(head == null)
 		{
 			tail = node;
-			PrintList();
 		}
 		node.adress=head;
 		head = node;
